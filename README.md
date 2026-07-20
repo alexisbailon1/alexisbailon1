@@ -39,7 +39,7 @@ graph TD
 `[Open Source]` • `[Native Android]` • `[Kotlin / Jetpack Compose]`
 Developed a native Android utility application engineered with a single-activity Composable architecture and a pure, stateless calculation core (`FuelCalculator`). Solves complex splash-blending algebra on the fly to help automotive enthusiasts hit target ethanol blends with real-time input validation and persistent state.
 * **Engineering Focus:** Demonstrates clean MVVM separation, custom Material 3 interactive UI elements, unit-testable algorithmic logic, and height-adaptive layouts.
-* **Development Methodology:** Leveraged conversational AI pair-programming for initial algebraic scaffolding, backed by rigorous manual code refactoring, on-device testing, and performance optimization.
+* **AI-Accelerated Architecture Migration:** Originally developed and utilized as a complete, private application built in **.NET MAUI**, then systematically re-architected and migrated to native **Kotlin and Jetpack Compose** for its public open-source release. Leveraged AI tooling as a code-translation engine to accelerate the C#-to-Kotlin migration and scaffold modern Material 3 layouts, backed by rigorous manual refactoring and on-device performance optimization.
 * **[Explore the Codebase ➔](https://github.com/alexisbailon1/e85-calculator)**
 
 ### 🃏 Pokémon TCG Scanner & Valuation Tracker
