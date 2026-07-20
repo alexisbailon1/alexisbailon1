@@ -1,6 +1,6 @@
 # Hi there, I'm a Software Engineer 👋
 
-I have 7+ years of experience building integrations, automations, and internal tools that solve real business problems. I specialize in backend architecture, real-time data synchronization, and modern developer workflows—leveraging **local LLM orchestration, custom agent bridges, and structured tooling** as a force multiplier to ship full-stack software faster without sacrificing architectural control.
+I have 7+ years of experience building integrations, automations, and internal tools that solve real business problems. I specialize in backend architecture, real-time data synchronization, and modern developer workflows leveraging **local LLM orchestration, custom agent bridges, and structured tooling** as a force multiplier to ship full-stack software faster without sacrificing architectural control.
 
 Here is a look at what I build, how I ship to production, and the systems I engineer from concept to deployment.
 
@@ -21,7 +21,7 @@ Engineered a self-hosted, local-first Kanban hub designed to coordinate software
 
 ```mermaid
 graph TD
-    subgraph Hub [Workflow Management System — Local Host]
+    subgraph Hub [Workflow Management System - Local Host]
         API[FastAPI Server & REST API] <-->|WAL Mode Concurrent R/W| DB[(SQLite Database)]
         CLI[CLI Bridge: ticket_tool.py] <-->|WAL Mode Concurrent R/W| DB
     end
