@@ -43,11 +43,10 @@ Developed a native Android utility application engineered with a single-activity
 * **[Explore the Codebase ➔](https://github.com/alexisbailon1/e85-calculator)**
 
 ### 🃏 Pokémon TCG Scanner & Valuation Tracker
-`[Work In Progress]` • `[Computer Vision / OCR]` • `[Offline-First Android]`
+`[Active Development / Closed Source]` • `[Computer Vision / On-Device ML]` • `[Offline-First Android]`
 An offline-first Android cataloging tool that transforms a device camera into an automated card ingestion and financial valuation pipeline. Built with **Kotlin, Jetpack Compose, Room SQLite, and the TCGdex API**.
-* **Computer Vision Pipeline:** Integrates CameraX with native **OpenCV** (Otsu-adaptive Canny edge detection and perspective warping) to standardize angled card photos, **ML Kit Text Recognition** for on-device set/number OCR, and **64-bit perceptual hashing (pHash)** with Hamming-distance matching for instant visual deduplication.
-* **Collector Accounting:** Features sealed "Rip Session" tracking that decouples purchase prices from pulled card valuations, rendering live ROI and valuation charts via Vico.
-* **[Follow Active Development ➔](https://github.com/alexisbailon1/pokemon-tcg-tracker)**
+* **Custom On-Device ML Pipeline:** Currently in active development, transitioning from classical computer vision to a **custom fine-tuned vision model** trained specifically for Pokémon TCG cards. The specialized model natively detects physical card boundaries and precisely localizes printed set codes, card numbers, and card names in a single inference pass—overcoming foil glare and angled captures.
+* **Collector Accounting & Deduplication:** Integrates **64-bit perceptual hashing (pHash)** with Hamming-distance matching for instant visual deduplication. Features sealed "Rip Session" tracking that decouples initial purchase costs from individual card pulls, rendering live ROI and valuation history charts via Vico.
 
 ---
 
