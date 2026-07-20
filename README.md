@@ -55,4 +55,4 @@ An offline-first Android cataloging tool that transforms a device camera into an
 * **Frontend & Mobile:** React 19, Vite, Tailwind CSS v4, Android (Native), Jetpack Compose, Material 3, Progressive Web Apps (PWA).
 * **Database & Integrations:** SQLite (WAL Mode), Firebase Realtime Database & Auth, Room SQLite, Zapier, Tray.io, Atlassian Jira, Git/GitHub.
 * **Systems & Vision Architecture:** OpenCV (Adaptive Edge Detection / Perspective Warping), ML Kit OCR, CameraX, Perceptual Hashing (pHash), Web Audio API.
-* **Developer Tooling & Orchestration:** Local LLM Deployment (LM Studio, Qwen2.5-Coder, Gemma, Llama), Claude Code (CLI / Headless), Custom CLI Agent Bridges, Automated Scaffolding & Code Review Pipelines.
+* **Developer Tooling & Orchestration:** Local LLM Deployment (LM Studio, Qwen2.5-Coder, Gemma, Llama), Claude Code (CLI / Headless), Google Antigravity (Gemini), ChatGPT Codex (CLI / Headless), Custom CLI Agent Bridges, Automated Scaffolding & Code Review Pipelines.
