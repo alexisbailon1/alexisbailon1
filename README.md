@@ -41,6 +41,7 @@ Developed a native Android utility application engineered with a single-activity
 * **Engineering Focus:** Demonstrates clean MVVM separation, custom Material 3 interactive UI elements, unit-testable algorithmic logic, and height-adaptive layouts.
 * **AI-Accelerated Architecture Migration:** Originally developed and utilized as a complete, private application built in **.NET MAUI**, then systematically re-architected and migrated to native **Kotlin and Jetpack Compose** for its public open-source release. Leveraged AI tooling as a code-translation engine to accelerate the C#-to-Kotlin migration and scaffold modern Material 3 layouts, backed by rigorous manual refactoring and on-device performance optimization.
 * **[Explore the Codebase ➔](https://github.com/alexisbailon1/e85-calculator)**
+* **[📱 Download the latest APK release here](https://github.com/alexisbailon1/e85-calculator/releases/latest)**
 
 ### 🃏 Pokémon TCG Scanner & Valuation Tracker
 `[Active Development / Closed Source]` • `[Computer Vision / On-Device ML]` • `[Offline-First Android]`
