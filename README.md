@@ -30,6 +30,7 @@ Designed and deployed a multi-role ordering platform for real-time coordination 
 
 ### Workflow Management System
 `[Systems Architecture]` • `[FastAPI / React 19]` • `[Local LLM Orchestration]`
+
 Built a self-hosted Kanban and development-workflow system for coordinating work across multiple software repositories.
 
 **Technology:** Python, FastAPI, React, Vite, SQLAlchemy, and SQLite in Write-Ahead Logging mode.
@@ -60,6 +61,7 @@ graph TD
 
 ### E85 Fuel & Technical Utility Application
 `[Open Source]` • `[Native Android]` • `[Kotlin / Jetpack Compose]`
+
 Developed a native Android application that calculates the quantities of gasoline and E85 required to reach a target ethanol mixture.
 
 **Technology:** Kotlin, Jetpack Compose, Material 3, and Android SharedPreferences.
@@ -73,13 +75,14 @@ Developed a native Android application that calculates the quantities of gasolin
 - Height-adaptive layouts
 - Custom Material 3 interface components
 - Migration from an earlier .NET MAUI implementation to native Android
-- 
+  
 * **[Explore the Codebase ➔](https://github.com/alexisbailon1/e85-calculator)**
 * **[Download the latest APK release here ➔](https://github.com/alexisbailon1/e85-calculator/releases/latest)**
 
 ### Pokémon TCG Scanner & Valuation Tracker
 `[Active Development / Closed Source]` • `[Computer Vision / On-Device ML]` • `[Offline-First Android]`
-Developing an Android application for cataloging Pokémon trading cards through camera capture, card identification, collection tracking, and valuation history.
+
+Currently developing an Android application for cataloging Pokémon trading cards through camera capture, card identification, collection tracking, and valuation history.
 
 **Technology:** Kotlin, Jetpack Compose, Room, CameraX, OpenCV, ML Kit, TCGdex API, and Vico charts.
 
