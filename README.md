@@ -14,7 +14,8 @@ I also have experience with AI-assisted development tools for research, scaffold
 
 ### Live Production Ordering Platform (Food Truck Ecosystem)
 `[Private Project / Closed Source]` • `[Live in Production]` • `[Progressive Web App]`
-- Designed and deployed a multi-role ordering platform for real-time coordination between front-of-house staff, kitchen staff, and administrators. 
+
+Designed and deployed a multi-role ordering platform for real-time coordination between front-of-house staff, kitchen staff, and administrators. 
 **Technology:** React 19, Vite, Tailwind CSS, Firebase Realtime Database, Firebase Authentication, and the Web Audio API.
 
 **Engineering highlights:**
