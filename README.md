@@ -76,7 +76,7 @@ Developed a native Android application that calculates the quantities of gasolin
 * **[Explore the Codebase ➔](https://github.com/alexisbailon1/e85-calculator)**
 * **[Download the latest APK release here ➔](https://github.com/alexisbailon1/e85-calculator/releases/latest)**
 
-### 🃏 Pokémon TCG Scanner & Valuation Tracker
+### Pokémon TCG Scanner & Valuation Tracker
 `[Active Development / Closed Source]` • `[Computer Vision / On-Device ML]` • `[Offline-First Android]`
 Developing an Android application for cataloging Pokémon trading cards through camera capture, card identification, collection tracking, and valuation history.
 
