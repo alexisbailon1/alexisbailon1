@@ -21,10 +21,9 @@ Engineered a self-hosted, local-first Kanban hub designed to coordinate software
 
 ```mermaid
 graph TD
-    subgraph Hub [Workflow Management System - Local Host]
         API[FastAPI Server & REST API] <-->|WAL Mode Concurrent R/W| DB[(SQLite Database)]
         CLI[CLI Bridge: ticket_tool.py] <-->|WAL Mode Concurrent R/W| DB
-    end
+
     UI[React 19 Kanban UI] <-->|HTTP / API| API
     Agent[External Developer Agents / Claude Code] -->|Executes Tasks & Logs Audit Trail| CLI
     API -->|Sends Code Diffs & Planning Context| LLM{Local LM Studio / Qwen2.5-Coder}
