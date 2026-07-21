@@ -1,58 +1,118 @@
-# Hi there, I'm a Software Engineer 👋
+# Alexis Bailon
 
-I have 7+ years of experience building integrations, automations, and internal tools that solve real business problems. I specialize in backend architecture, real-time data synchronization, and modern developer workflows leveraging **local LLM orchestration, custom agent bridges, and structured tooling** as a force multiplier to ship full-stack software faster without sacrificing architectural control.
+**Software Engineer | Backend Integrations | Workflow Automation | Full-Stack Development**
 
-Here is a look at what I build, how I ship to production, and the systems I engineer from concept to deployment.
+Software engineer with 7+ years of experience building integrations, workflow automations, internal tools, and applications that solve real business problems.
+
+My work spans backend architecture, REST APIs, database-driven workflows, real-time data synchronization, full-stack web development, and native Android applications. I focus on building maintainable systems from initial requirements through implementation, deployment, and production support.
+
+I also have experience with AI-assisted development tools for research, scaffolding, debugging, documentation, and code review, with final architecture and implementation decisions verified manually.
 
 ---
 
-## 🚀 Featured Production & Systems Architecture
+## Featured Production & Systems Architecture
 
-### 🌮 Live Production Ordering Platform (Food Truck Ecosystem)
-`[Proprietary / Closed Source]` • `[Live in Production]` • `[Progressive Web App]`
-Architected and deployed a commercial-grade, multi-role Progressive Web App engineered for real-time order synchronization across front-of-house tablets, an iOS-optimized Kitchen Display System (KDS) with Web Audio alerts, and an administrative control panel. Built with **React 19, Vite, Tailwind CSS v4, and Firebase Realtime Database**.
-* **Systems & Workflow Engineering:** Designed low-latency database hooks and role-based state routing. Implemented strict agent operating rules (`AGENTS.md`) and living technical documentation (`DOCUMENTATION.md`) to maintain absolute architectural control while cutting boilerplate scaffolding and feature time-to-market by 50%.
+### Live Production Ordering Platform (Food Truck Ecosystem)
+`[Private Project / Closed Source]` • `[Live in Production]` • `[Progressive Web App]`
+Designed and deployed a multi-role ordering platform for real-time coordination between front-of-house staff, kitchen staff, and administrators. 
+**Technology:** React 19, Vite, Tailwind CSS, Firebase Realtime Database, Firebase Authentication, and the Web Audio API.
 
-### 🤖 Workflow Management System
+**Engineering highlights:**
+
+- Real-time order synchronization across multiple devices
+- Front-of-house tablet ordering interface
+- mobile device optimized Kitchen Display System
+- Audio notifications for incoming kitchen orders
+- Role-based application behavior and access
+- Administrative order and system controls
+- Project-level engineering guidelines and technical documentation
+
+### Workflow Management System
 `[Systems Architecture]` • `[FastAPI / React 19]` • `[Local LLM Orchestration]`
-Engineered a self-hosted, local-first Kanban hub designed to coordinate software development across multiple repositories between human developers and autonomous AI agents. Built with a **FastAPI REST backend, React/Vite UI, and SQLite running in WAL (Write-Ahead Logging) mode**.
-* **Concurrent Agentic Bridge:** Developed a custom command-line bridge (`ticket_tool.py`) that safely exposes shared SQLAlchemy models to external developer agents (like Claude Code). Enables automated task fetching and audit logging without database lock contention, shell exposure, or API key leaks.
-* **Private Code Review Pipeline:** Integrated a local, one-click review loop that scopes git diffs and project planning docs to a ticket's target path, routing them to an offline **Qwen2.5-Coder model running in LM Studio** for immediate architectural feedback.
+Built a self-hosted Kanban and development-workflow system for coordinating work across multiple software repositories.
+
+**Technology:** Python, FastAPI, React, Vite, SQLAlchemy, and SQLite in Write-Ahead Logging mode.
+
+**Engineering highlights:**
+
+- REST API for projects, tickets, status updates, and audit history
+- React-based Kanban interface
+- Shared SQLAlchemy models across the API and command-line tools
+- Command-line bridge for controlled task retrieval and activity logging
+- Concurrent database access using SQLite Write-Ahead Logging
+- Repository-specific ticket and planning context
+- Local code-review workflow for analyzing scoped Git changes
+- Integration with local language models for private, offline review assistance
 
 ```mermaid
 graph TD
-        API[FastAPI Server & REST API] <-->|WAL Mode Concurrent R/W| DB[(SQLite Database)]
-        CLI[CLI Bridge: ticket_tool.py] <-->|WAL Mode Concurrent R/W| DB
-
-    UI[React 19 Kanban UI] <-->|HTTP / API| API
-    Agent[External Developer Agents / Claude Code] -->|Executes Tasks & Logs Audit Trail| CLI
-    API -->|Sends Code Diffs & Planning Context| LLM{Local LM Studio / Qwen2.5-Coder}
-    LLM -->|Posts Automated Code Reviews| DB
+    API[FastAPI REST API] <-->|Concurrent read and write| DB[(SQLite in WAL mode)]
+    CLI[Command-line bridge] <-->|Concurrent read and write| DB
+    UI[React Kanban interface] <-->|HTTP| API
+    Tools[Developer tools] -->|Retrieve tasks and log activity| CLI
+    API -->|Scoped code changes and context| Review[Local review model]
+    Review -->|Review results| DB
 ```
-
 ---
 
-## 💻 Open Source & Active Applications
+## Open Source & Active Applications
 
-### ⛽ E85 Fuel & Technical Utility Application
+### E85 Fuel & Technical Utility Application
 `[Open Source]` • `[Native Android]` • `[Kotlin / Jetpack Compose]`
-Developed a native Android utility application engineered with a single-activity Composable architecture and a pure, stateless calculation core (`FuelCalculator`). Solves complex splash-blending algebra on the fly to help automotive enthusiasts hit target ethanol blends with real-time input validation and persistent state.
-* **Engineering Focus:** Demonstrates clean MVVM separation, custom Material 3 interactive UI elements, unit-testable algorithmic logic, and height-adaptive layouts.
-* **AI-Accelerated Architecture Migration:** Originally developed and utilized as a complete, private application built in **.NET MAUI**, then systematically re-architected and migrated to native **Kotlin and Jetpack Compose** for its public open-source release. Leveraged AI tooling as a code-translation engine to accelerate the C#-to-Kotlin migration and scaffold modern Material 3 layouts, backed by rigorous manual refactoring and on-device performance optimization.
+Developed a native Android application that calculates the quantities of gasoline and E85 required to reach a target ethanol mixture.
+
+**Technology:** Kotlin, Jetpack Compose, Material 3, and Android SharedPreferences.
+
+**Engineering highlights:**
+
+- Pure, stateless fuel-calculation engine
+- Separation between calculation logic and the Compose interface
+- Real-time input validation
+- Persistent user preferences
+- Height-adaptive layouts
+- Custom Material 3 interface components
+- Migration from an earlier .NET MAUI implementation to native Android
+- 
 * **[Explore the Codebase ➔](https://github.com/alexisbailon1/e85-calculator)**
-* **[📱 Download the latest APK release here](https://github.com/alexisbailon1/e85-calculator/releases/latest)**
+* **[Download the latest APK release here ➔](https://github.com/alexisbailon1/e85-calculator/releases/latest)**
 
 ### 🃏 Pokémon TCG Scanner & Valuation Tracker
 `[Active Development / Closed Source]` • `[Computer Vision / On-Device ML]` • `[Offline-First Android]`
-An offline-first Android cataloging tool that transforms a device camera into an automated card ingestion and financial valuation pipeline. Built with **Kotlin, Jetpack Compose, Room SQLite, and the TCGdex API**.
-* **Custom On-Device ML Pipeline:** Currently in active development, transitioning from classical computer vision to a **custom fine-tuned vision model** trained specifically for Pokémon TCG cards. The specialized model natively detects physical card boundaries and precisely localizes printed set codes, card numbers, and card names in a single inference pass-overcoming foil glare and angled captures.
-* **Collector Accounting & Deduplication:** Integrates **64-bit perceptual hashing (pHash)** with Hamming-distance matching for instant visual deduplication. Features sealed "Rip Session" tracking that decouples initial purchase costs from individual card pulls, rendering live ROI and valuation history charts via Vico.
+Developing an Android application for cataloging Pokémon trading cards through camera capture, card identification, collection tracking, and valuation history.
 
+**Technology:** Kotlin, Jetpack Compose, Room, CameraX, OpenCV, ML Kit, TCGdex API, and Vico charts.
+
+**Current development areas:**
+
+- Camera-based card capture
+- Card-boundary detection and perspective correction
+- OCR-assisted card-name, set-code, and card-number extraction
+- Offline collection storage with Room
+- Perceptual-hash matching for duplicate detection
+- Sealed-product purchase and opening-session tracking
+- Collection value and return-on-investment charts
+- Evaluation of custom on-device vision models for card recognition
+  
 ---
 
-## 🛠️ Technical Arsenal
-* **Languages & Backend:** PHP, JavaScript, Kotlin, Python, SQL, Microsoft SQL Server, FastAPI, SQLAlchemy, RESTful APIs.
-* **Frontend & Mobile:** React 19, Vite, Tailwind CSS v4, Android (Native), Jetpack Compose, Material 3, Progressive Web Apps (PWA).
-* **Database & Integrations:** SQLite (WAL Mode), Firebase Realtime Database & Auth, Room SQLite, Zapier, Tray.io, Atlassian Jira, Git/GitHub.
-* **Systems & Vision Architecture:** OpenCV (Adaptive Edge Detection / Perspective Warping), ML Kit OCR, CameraX, Perceptual Hashing (pHash), Web Audio API.
-* **Developer Tooling & Orchestration:** Local LLM Deployment (LM Studio, Qwen2.5-Coder, Gemma, Llama), Claude Code (CLI / Headless), Google Antigravity (Gemini), ChatGPT Codex (CLI / Headless), Custom CLI Agent Bridges, Automated Scaffolding & Code Review Pipelines.
+## Technical Skills
+
+### Languages and Backend
+
+PHP, JavaScript, Python, Kotlin, SQL, C#, FastAPI, SQLAlchemy, REST APIs, and webhooks
+
+### Frontend and Mobile
+
+React, Vite, Tailwind CSS, Android, Jetpack Compose, Material 3, Progressive Web Apps, and .NET MAUI
+
+### Databases and Platforms
+
+Microsoft SQL Server, SQLite, Room, Firebase Realtime Database, Firebase Authentication, Git, GitHub, Jira, Tray.io, and Zapier
+
+### Computer Vision and Device APIs
+
+CameraX, OpenCV, ML Kit OCR, perceptual hashing, perspective correction, and the Web Audio API
+
+### Development Practices
+
+Requirements analysis, API integration, technical documentation, debugging, production support, code review, workflow automation, and AI-assisted development with manual verification
