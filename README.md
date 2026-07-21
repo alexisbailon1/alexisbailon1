@@ -6,7 +6,7 @@ Software engineer with 7+ years of experience building integrations, workflow au
 
 My work spans backend architecture, REST APIs, database-driven workflows, real-time data synchronization, full-stack web development, and native Android applications. I focus on building maintainable systems from initial requirements through implementation, deployment, and production support.
 
-I also have experience with AI-assisted development tools for research, scaffolding, debugging, documentation, and code review, with final architecture and implementation decisions verified manually.
+I also leverage AI-assisted development tools to accelerate prototyping, implementation, debugging, documentation, and code review while keeping final architecture, security, and implementation decisions under manual control.
 
 ---
 
@@ -98,6 +98,25 @@ Currently developing an Android application for cataloging Pokémon trading card
 - Evaluation of custom on-device vision models for card recognition
   
 ---
+
+## AI-Assisted Development
+
+I have experience using AI-assisted development tools to rapidly prototype and deliver solutions, including troubleshooting, refactoring, documentation, and code review. These tools support the engineering process, while final code, architecture, validation, and deployment decisions remain developer-reviewed.
+
+### Tools and Workflows
+
+- **Claude Code CLI** - repository analysis, feature implementation, debugging, refactoring, technical documentation, and multi-file changes
+- **OpenAI Codex CLI** - code generation and editing, troubleshooting, test support, implementation planning, and code review
+- **Google Antigravity** - agent-assisted prototyping, task planning, iterative implementation, and development workflow automation
+- **LM Studio with local models** - private, offline code analysis and review for scoped project changes
+
+### Engineering Approach
+
+- Define requirements and constraints before implementation
+- Use AI tools to accelerate research, scaffolding, and repetitive development tasks
+- Review generated changes for correctness, maintainability, security, and alignment with existing architecture
+- Test behavior manually and with automated checks where available
+- Retain ownership of final technical decisions and production releases
 
 ## Technical Skills
 
